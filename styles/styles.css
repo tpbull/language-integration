@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 0.5em;
+}
+
+.ContentEntry {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border: 1px solid #CCC;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.ContentEntry:not(:last-child) {
+    margin-right: 0.5em;
+    flex-direction: column;
+}
+
+.FlashCardContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AgentContainer {
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.FlashCard {
+    width: calc((100% - 2em) / 3);
+    height: calc((100% - 6em));
+    border-radius: 1em;
+    box-shadow: 4px 8px 12px 2px rgba(0, 0, 0, 0.15);
+    padding: 1em;
+}
